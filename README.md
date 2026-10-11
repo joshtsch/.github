@@ -12,3 +12,7 @@ When supplying a pull request body explicitly through the CLI or an API, use
 these same sections. A template does not enforce the submitted body's format.
 
 See [GitHub's default community file documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
+
+## Portfolio issue automation
+
+The `Add issues to shared portfolio project` workflow adds issues to the private portfolio project when issues are opened, reopened, or transferred into this repository. Configure repository secrets `PORTFOLIO_PROJECT_URL` and `PORTFOLIO_PROJECT_TOKEN` before enabling it. The token needs access to add project items and read source issues. Do not put either secret value in repository files.
